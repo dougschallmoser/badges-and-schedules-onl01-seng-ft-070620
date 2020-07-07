@@ -10,13 +10,9 @@ attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 
 
 def batch_badge_creator(attendees)
-  
-  badge_messages = []
-  attendees.each do |person| 
+  attendees.map do |person| 
     badge_messages.push("Hello, my name is #{person}.")
   end 
-  badge_messages 
-  
 end 
 
 def assign_rooms(attendees)
