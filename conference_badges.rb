@@ -11,13 +11,13 @@ attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 
 def batch_badge_creator(attendees)
   attendees.map do |person| 
-    badge_messages.push("Hello, my name is #{person}.")
+    "Hello, my name is #{person}."
   end 
 end 
 
 def assign_rooms(attendees)
   attendees.each_with_index.map do |name, room|
-  room_assignments << "Hello, #{name}! You'll be assigned to room #{room + 1}!"
+  "Hello, #{name}! You'll be assigned to room #{room + 1}!"
   end 
 end 
 
